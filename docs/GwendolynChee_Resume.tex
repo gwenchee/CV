@@ -24,6 +24,7 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
+\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
 
 \name{Gwendolyn Chee} % Your name
 \address{gchee2@illinois.edu \\ (217)$\cdot$~904$\cdot$~9057 } % Your phone number and email
@@ -41,7 +42,7 @@ M.S. \hspace*{2 em}\= \textbf{University of Illinois at Urbana-Champaign} \hspac
 \> Nuclear, Plasma and Radiological Engineering \\
 %
 B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em} \= 2013 - 2017 \\
-\> Engineering Physics with a specialization in Material Engineering
+\> Engineering Physics with a specialization in Materials Engineering
 \end{tabbing}
 
 \end{rSection}
@@ -52,8 +53,9 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 
 \begin{rSection}{Research Experience}
 
-\begin{rSubsection}{University of Illinois at Urbana-Champaign}{September 2017 - Present}{Research Assistant, Advanced Reactors and Fuel Cycles}{Urbana, IL}
-\item 
+\begin{rSubsection}{University of Illinois at Urbana-Champaign}{2017 - Present}{Research Assistant, Advanced Reactors and Fuel Cycles}{Urbana, IL}
+\item Conducting research in fuel cycle analysis: specifically using Python and C++ to develop Cyclus, a fuel cycle simulation software
+\item Development of prediction models for fuel cycle transition scenarios in Cyclus based on material and energy demand 
 \end{rSubsection}
 
 \begin{rSubsection}{Queen's University at Kingston}{2016 - 2017}{Research Assistant, Nuclear Materials Research Group}{Kingston,ON}
@@ -65,10 +67,11 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 	\item Developed a MATLAB program that studies the effect of Berry Curvature on electrons in graphene
 	\item Investigated the effects of changing the geometry of graphene devices on their electric fields to assist graduate students in their design of nano graphene devices
 \end{rSubsection}
-
-\begin{rSubsection}{Nanyang Technological University}{2015}{Research Assistant, Polymeric Biomaterials Group}{Singapore}
+\iffalse
+	\begin{rSubsection}{Nanyang Technological University}{2015}{Research Assistant, Polymeric Biomaterials Group}{Singapore}
 	\item Involved in Biodegradable Heart Stent project. Prepared polymer specimens with varying nanoparticle concentrations and tested them to compare their mechanical strength
-\end{rSubsection}
+	\end{rSubsection}
+\fi
 
 \end{rSection}
 
@@ -79,16 +82,20 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 \begin{rSection}{Engineering Experience}
 	
 	\begin{rSubsection}{4th Year Engineering Physics Capstone Project}{2016}{Self Sorting Recycling Bin}{}
-		\item Worked in a team of 6 to prototype a Self-Sorting Recycling Bin that relies on image recognition, sound profiling and weight sensing to sort trash and recyclables
+		\item Prototyped a Self-Sorting Recycling Bin that relies on image recognition, sound profiling and weight sensing to sort trash and recyclables
 	\end{rSubsection}
 
 	\begin{rSubsection}{Engineering Physics Design Project}{2015}{Photodiode Research Sensor}{}
-		\item Worked in a team of 2 to design and fabricate a research sensor used to assess the properties of photodiodes. Information gathered included efficiency, current and voltage under illuminated and darkened conditions which was found using an Arduino, Matlab and LabVIEW
+		\item Designed and fabricated a research sensor used to assess the properties of photodiodes. Information gathered included efficiency, current and voltage under illuminated and darkened conditions using an Arduino, Matlab and LabVIEW
 	\end{rSubsection}
 
 	\begin{rSubsection}{Engineering Design and Practice II}{2014}{Nuclear Waste Gamma Radiation Detector}{}
-		\item Worked in a team of 4 to prototype a Nuclear Waste Gamma Radiation Detector. Through the process of material selection and decision making, the final product was designed for use in areas surrounding the Deep Geologic Repository in Ontario
+		\item Prototyped a Nuclear Waste Gamma Radiation Detector. Through the process of material selection and decision making, the final product was designed for use in areas surrounding the Deep Geologic Repository in Ontario
 	\end{rSubsection}
+
+	\begin{rSubsection}{Wirecard AG}{2014}{Summer Technology Intern}{}
+	\item Redesigned Wirecard's payment processing webpage using HTML and CSS. 
+\end{rSubsection}
 	
 \end{rSection}
 
@@ -99,8 +106,8 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 \begin{rSection}{Teaching Experience}
 	
 	\begin{rSubsection}{Queen's University at Kingston}{2015 - 2017}{Teaching Assistant, Physics Department}{Kingston,ON}
-		\item First year physics course (PHYS 104/106)
-		\item Conducted drop in help sessions once a week for first-years who require extra guidance
+		\item First year physics courses (PHYS 104/106)
+		\item Conducted drop in help sessions once a week for first-years who required extra guidance
 	\end{rSubsection}
 
 \end{rSection}
@@ -109,18 +116,23 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 % EXTRACURRICULAR ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Extracurricular Activities}
+\begin{rSection}{Service}
 
 	\begin{rSubsection}{U.S. Women in Nuclear}{2018 - Present}{Committee Member, UIUC Chapter}{Urbana, IL}
-		\item Promoting 
-	\end{rSubsection}
-	
-	\begin{rSubsection}{Queens Chinese Student Association}{2013 - 2017}{Co-President}{Kingston,ON}
-		\item Led team of 20 to organize multiple cultural events through the academic year
-		\item Designed a new membership package which increased club participation by 50%
-		\item The biggest yearly event is a singing competition to showcase diverse talent on campus. Responsibilities include leading the event planning, stage and front of house team leading up to the event. 
+		\item Promoting awareness of the benefits of nuclear applications at UIUC 
 	\end{rSubsection}
 
+	\begin{rSubsection}{UC Books to Prisoners}{2017 - Present}{Volunteer}{Urbana, IL}
+		\item UC Books to Prisoners is an Urbana Illinois based project that provides books to Illinois inmates at no cost via mail
+		\item As a volunteer, we read their letters and select books that most closely meets their requests to send to them
+	\end{rSubsection}
+	
+	\begin{rSubsection}{Queen's Chinese Student Association}{2013 - 2017}{Co-President}{Kingston,ON}
+		\item Led a team of 20 to organize multiple cultural events through the academic year
+		\item Designed a new membership package which increased club participation by 50\%
+		\item The biggest yearly event is a singing competition to showcase diverse talent on campus. Responsibilities include leading the event planning, stage and front of house teams 
+	\end{rSubsection}
+\iffalse
 	\begin{rSubsection}{Conference on Industry and Resources Queen's University (CIRQUE)}{2015 - 2016}{Executive Team Member - Events Coordinator}{Kingston,ON}
 		\item Worked in a team of 14 that planned, organized and executed a 2-day conference that gives engineering students a broader outlook to the versatility of their degree
 		\item Planned and promoted a speaker series and networking night to increase delegate participation and awareness of CIRQUE on campus
@@ -129,9 +141,9 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 	\begin{rSubsection}{Queen's Association for Technology in Medicine and Biology}{2015 - 2016}{Vice President of Publicity }{Kingston,ON}
 		\item Collaborated with a small executive team to organize a lecture series where faculty and students present their work that pertains to the application of technology in medicine and biology
 	\end{rSubsection}	
-
+\fi
 	\begin{rSubsection}{Greenovations}{2014 - 2015}{Committee Member}{Kingston,ON}
-		\item Promoted sustainability within the Queen's community through a hands-on-approach, by retrofitting student homes: sealing windows, replacing energy-inefficient light bulbs, replacing high-flow tap head
+		\item Promoted sustainability by retrofitting student homes: sealing windows, replacing energy-inefficient light bulbs, replacing high-flow tap heads
 		\item Increased student awareness on environmental issues by organizing events such as a light bulb exchange: exchanging incandescence light bulbs for free energy saving bulbs
 	\end{rSubsection}	
 	
@@ -144,11 +156,12 @@ B.S. \hspace*{2 em}\> \textbf{Queen's University at Kingston} \> \hspace*{7.2em}
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & Python, MATLAB, C++, OrCAD, LabVIEW, Solid Edge, HTML,\\ 
+Languages & Python, MATLAB, C++, LabVIEW, Solid Edge, HTML\\ 
  & COMSOL Multiphysics \\ 
-Protocols \& APIs & XML, JSON \\
-Databases & MySQL, PostgreSQL, Microsoft SQL \\
-Tools &  Vim, Atom
+Protocols \& APIs & XML \\
+Tools &  \LaTeX, Mathematica, shell, vim, bash, atom, Jupyter \\
+Databases & MySQL, \\
+Nuclear Software & $\Cyclus$, PyNE
 \end{tabular}
 
 \end{rSection}
