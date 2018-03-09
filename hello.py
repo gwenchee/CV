@@ -1,3 +1,0 @@
-ghello
-:wq
-hihi
