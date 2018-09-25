@@ -1,4 +1,4 @@
-manuscript = GwendolynChee_Resume
+manuscript = GwendolynChee_CV
 references = $(wildcard *.bib)
 latexopt   = -halt-on-error -file-line-error
 
@@ -24,7 +24,7 @@ epub:
 	ebook-convert $(manuscript).html $(manuscript).epub
 
 clean:
-	rm -f *.dvi *.toc *.aux *.gz *.out *.log *.bbl *.blg *.log *.spl *~ *.spl *.zip *.acn *.glo *.ist *.epub
+	rm -f *.dvi *.toc *.aux *.gz *.out *.log *.bbl *.blg *.log *.spl *~ *.spl *.zip *.acn *.glo *.ist *.epub *.fls *.fdb_latexmk
 
 realclean: clean
 	rm -rf $(manuscript).dvi

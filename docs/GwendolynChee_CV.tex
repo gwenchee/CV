@@ -24,7 +24,6 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
-\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
 
 
 
@@ -40,11 +39,12 @@
 I am an engineer that is passionate about \\ 
 nuclear technology and developing innovative \\
 systems to face today's energy challenges.   
-\fi
+
 Gwen is passionate about nuclear power and developing \\
 innovative systems to improve nuclear energy and fuel cycle\\
 technologies. She wants to contribute to pressing global\\
 energy challenges and environmental sustainability. 
+\fi
 
 \raggedright
 
@@ -67,13 +67,14 @@ B.A.Sc. \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hsp
 \begin{rSection}{Research Experience}
 
 \begin{rSubsection}{University of Illinois at Urbana-Champaign}{2017 - Present}{Research Assistant, Advanced Reactors and Fuel Cycles}{Urbana, IL}
-\item Conducting research in fuel cycle analysis: specifically using Python and C++ to develop Cyclus, a fuel cycle simulation software
-\item Processing large data outputted by Cyclus using SQL to analyze various aspects of the fuel cycle 
-\item Development of numerical experiments to test and verify demand driven deployment algorithms in Cyclus 
+\item Conducting research in fuel cycle analysis specifically using Python and C++ to develop \textsc{Cyclus}, a fuel cycle simulation software
+\item Developing facilities in \textsc{Cyclus} to simulate the back-end of the nuclear fuel cycle 
+\item Running various simulations to model different transfer and loading strategies for moving spent nuclear fuel from reactor sites to a final waste repository
+\item Development of demand driven deployment algorithms in \textsc{Cyclus} 
 \end{rSubsection}
 
 \begin{rSubsection}{Queen's University at Kingston}{2016 - 2017}{Research Assistant, Nuclear Materials Research Group}{Kingston,ON}
-\item Designed a Sieverts Apparatus to gaseously charge hydrogen gas into zirconium alloys 
+\item Designed a Sieverts Apparatus to gaseously charge hydrogen gas into zirconium alloys to mimic hydrogen embrittlement of zirconium alloys used in nuclear reactors
 \item The design is being implemented at Reactor Materials Testing Laboratory to test how hydrogen embrittled zirconium alloys respond in nuclear reactor conditions
 \iffalse
 \item Application to nuclear industry: zirconium alloys used in nuclear reactors succumb to hydrogen embrittlement during its lifetime, therefore, it is important to be able to replicate the conditions in nuclear reactors, so as to study its end-of-life conditions
@@ -82,14 +83,14 @@ B.A.Sc. \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hsp
 
 \begin{rSubsection}{National University of Singapore}{Summer 2016}{Research Assistant, Centre for Advanced 2D Materials}{Singapore}
 	\item Developed MATLAB programs to study the effect of Berry Curvature on electrons in graphene and the effects of changing the geometry of graphene devices on their electric fields 
-	\item Both programs are used to assist graduate students in their design of nano-graphene devices
+	\item Both programs were used to assist graduate students in their design of nano-graphene devices
 \end{rSubsection}
-
+\iffalse
 	\begin{rSubsection}{Nanyang Technological University}{Summer 2015}{Research Assistant, Polymeric Biomaterials Group}{Singapore}
 	\item Involved in the biodegradable heart stent project where nanoparticles of varying sizes and composition were added to different kinds of polymers to increase their mechanical properties
 	\item Conducted experiments using Instrom tensile tester, ultrasonicator, microcompounder and thermogravimetric analysis to characterize the nanoparticle enhanced polymer materials
 	\end{rSubsection}
-
+\fi
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -110,12 +111,12 @@ B.A.Sc. \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hsp
 	\begin{rSubsection}{Engineering Design and Practice II}{2014}{Nuclear Waste Gamma Radiation Detector}{Kingston,ON}
 		\item Prototyped a Nuclear Waste Gamma Radiation Detector. Through the process of material selection and decision making, the final product was designed for use in areas surrounding the Deep Geologic Repository in Ontario
 	\end{rSubsection}
-\fi
+
 	\begin{rSubsection}{Wirecard AG}{Summer 2014}{Summer Technology Intern}{Singapore}
 	\item Redesigned Wirecard's payment processing webpage using HTML and CSS
 	\item It is currently used for redirecting online payments to Wirecard's payment processing service	
 	\end{rSubsection}
-
+\fi
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE
@@ -138,7 +139,7 @@ B.A.Sc. \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hsp
 	\begin{rSubsection}{U.S. Women in Nuclear}{2018 - Present}{Professional Development Chair, UIUC Chapter}{Urbana, IL}
 		\item Promoting awareness of the benefits of nuclear applications to the UIUC and Champaign-Urbana communities
 	\end{rSubsection}
-
+\iffalse
 	\begin{rSubsection}{UC Books to Prisoners}{2017 - Present}{Volunteer}{Urbana, IL}
 		\item UC Books to Prisoners is a non-profit that provides books to Illinois inmates at no cost via mail
 		\item As a volunteer, we read letters from inmates and select books that meets their interests
@@ -151,17 +152,29 @@ B.A.Sc. \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hsp
 	\begin{rSubsection}{Conference on Industry and Resources Queen's University (CIRQUE)}{2015 - 2016}{Executive Team Member - Events Coordinator}{Kingston,ON}
 		\item Worked in a team of 14 to plan, organize and execute a 2-day conference that aims to expose engineering students to industry leaders who share their insights and experiences, and thus demonstrating the versatility of an engineering degree
 	\end{rSubsection}	
-\iffalse
+
 	\begin{rSubsection}{Queen's Association for Technology in Medicine and Biology}{2015 - 2016}{Vice President of Publicity }{Kingston,ON}
 		\item Collaborated with a small executive team to organize a lecture series where faculty and students present their work that pertains to the application of technology in medicine and biology
 	\end{rSubsection}	
-\fi
+
 	\begin{rSubsection}{Greenovations}{2014 - 2015}{Committee Member}{Kingston,ON}
 		\item Promoted sustainability on campus by retrofitting student homes and organizing environmental awareness campaigns 
 	\end{rSubsection}	
-	
+\fi	
 \end{rSection}
 
+\begin{rSection}{Conference Presentations}
+	\begin{rSubsection}{ANS Student Conference}{Mar 2018}{Presentation}{Gainesville, FL}
+		G.J. Chee, J.W. Bae and K.D. Huff. "Numerical Experiments for testing Demand-Driven Deployment Algorithms". 
+	\end{rSubsection}	
+
+\end{rSection}
+\begin{rSection}{Technical Reports}
+	\begin{rSubsection}{Advanced Reactors and Fuel Cycles Report Series}{Apr 2018}{Report UIUC-ARFC-2018-01}{Urbana, IL}
+		G.J. Chee, J.W. Bae and K.D. Huff. "Numerical Experiments for testing Demand-Driven Deployment Algorithms". 
+	\end{rSubsection}	
+
+\end{rSection}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
@@ -169,11 +182,11 @@ B.A.Sc. \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hsp
 \begin{rSection}{Technical Strengths and other relevant skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & Python, MATLAB, C++, LabVIEW, Solid Edge, HTML\\  
+Computer Languages & Python, C++, MATLAB, LabVIEW, Solid Edge, HTML\\  
 Protocols \& APIs & XML \\
 Tools &  \LaTeX, Mathematica, shell, vim, bash, atom, Jupyter, MS Word, MS Excel \\
 Databases & MySQL \\
-Nuclear Software & \Cyclus, PyNE \\
+Nuclear Software & \textsc{Cyclus} , PyNE \\
 Languages & English, Mandarin 
 \end{tabular}
 
