@@ -24,8 +24,11 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
-
-
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage{enumitem}
+\setenumerate[1]{label={[\arabic*]}}
+\bibliographystyle{plain}
 
 \name{Gwendolyn J. Chee} % Your name
 \address{gchee2@illinois.edu \\ https://github.com/gwenchee } % Your phone number and email
@@ -53,14 +56,15 @@ energy challenges and environmental sustainability.
 \begin{tabbing}
 PhD \hspace*{1.5 em}\= \textbf{University of Illinois at Urbana-Champaign} \hspace*{5em} \= \hspace*{7.7em} \= 2019 - Present \\
 \> Nuclear, Plasma and Radiological Engineering \\
-\> \textit{Research focus: Predictive Analytics to Optimize Nuclear Reactor Designs.} \\
+\> Graduate Concentration: Computational Science and Engineering \\
+\> \textit{Research focus: Predictive Analytics to Optimize Nuclear Reactor Designs} \\
 %	
 MS \hspace*{2 em}\= \textbf{University of Illinois at Urbana-Champaign} \hspace*{5em} \= \hspace*{9em} \= 2017 - 2019 \\
 \> Nuclear, Plasma and Radiological Engineering \\
 \> \textit{Thesis: Sensitivity Analysis of Nuclear Fuel Cycle Transitions}\\
 %
 BASc \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hspace*{9em} \= 2013 - 2017 \\
-\> Engineering Physics \\
+\> Engineering Physics, Material Science focus \\
 \> \textit{Thesis: Designing a System to Gaseous Hydrogen Charge Zirconium Alloys }
 \end{tabbing}
 
@@ -73,8 +77,10 @@ BASc \hspace*{2 em}\> \textbf{Queen's University at Kingston, Canada} \> \hspace
 \begin{rSection}{Research Experience}
 
 \begin{rSubsection}{University of Illinois at Urbana-Champaign}{2017 - Present}{Research Assistant, Advanced Reactors and Fuel Cycles}{Urbana, IL}
-Advisor: Professor Kathryn D. Huff 
-
+Advisor: Professor Kathryn D. Huff \\
+Developed demand-driven deployment algorithms for \textsc{Cyclus}, and coupled \textsc{Cyclus} with Dakota 
+to perform sensitivity analysis on nuclear fuel cycle transitions. Currently working on leveraging generative 
+machine learning algorithms to optimize modular High Temperature Gas Cooled Reactor designs. 
 \end{rSubsection}
 
 \begin{rSubsection}{Argonne National Laboratory}{May 2019 - Aug 2019}{Research Aide}{Lemont, IL}
@@ -108,13 +114,23 @@ combination that best increases the mechanical properties of biodegradable heart
 
 \end{rSection}
 
+\begin{rSection}{Professional Service}
+
+	\begin{rSubsection}{U.S. Women in Nuclear}{2018 - Present}{President}{Urbana, IL}
+	Leads the UIUC WiN chapter to uplift the mission of professional development, 
+	educational outreach, and a sense of community amongst our members 
+	(\href{https://github.com/gwenchee/wincv}{WiN CV}).
+	\end{rSubsection}
+	
+	\end{rSection}
+
 %----------------------------------------------------------------------------------------
 %	ENGINEERING EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Engineering Experience}
 	
-	\begin{rSubsection}{4th Year Engineering Physics Capstone Project}{2016}{Self Sorting Recycling Bin}{Kingston,ON}
+	\begin{rSubsection}{Engineering Physics Capstone Project}{2016}{Self Sorting Recycling Bin}{Kingston,ON}
 		 Developed a neural network to sort between recycling and garbage through image recognition and sound profiling.
 		 Led the mechanical team to prototype the physical design which used feedback from the neural network to 
 		 physically separate the items. 
@@ -134,7 +150,7 @@ combination that best increases the mechanical properties of biodegradable heart
 	\end{rSubsection}
 \fi
 \end{rSection}
-\pagebreak
+
 %----------------------------------------------------------------------------------------
 %	TEACHING EXPERIENCE
 %----------------------------------------------------------------------------------------
@@ -147,89 +163,41 @@ combination that best increases the mechanical properties of biodegradable heart
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-% EXTRACURRICULAR ACTIVITIES
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Service}
-
-\begin{rSubsection}{U.S. Women in Nuclear}{2018 - Present}{President}{Urbana, IL}
-Leads the UIUC WiN chapter to uplift the mission of professional development, 
-educational outreach, and a sense of community amongst our members. \\
-WiN CV: $https://github.com/gwenchee/wincv$	
-\end{rSubsection}
-\iffalse
-	\begin{rSubsection}{UC Books to Prisoners}{2017 - Present}{Volunteer}{Urbana, IL}
-		 UC Books to Prisoners is a non-profit that provides books to Illinois inmates at no cost via mail
-		 As a volunteer, we read letters from inmates and select books that meets their interests
-	\end{rSubsection}
-	
-	\begin{rSubsection}{Queen's Chinese Student Association}{2013 - 2017}{Co-President}{Kingston,ON}
-		 Led a team of 20 to promote cultural awareness and organize social events within the Queen's community
-	\end{rSubsection}
-
-	\begin{rSubsection}{Conference on Industry and Resources Queen's University (CIRQUE)}{2015 - 2016}{Executive Team Member - Events Coordinator}{Kingston,ON}
-		 Worked in a team of 14 to plan, organize and execute a 2-day conference that aims to expose engineering students to industry leaders who share their insights and experiences, and thus demonstrating the versatility of an engineering degree
-	\end{rSubsection}	
-
-	\begin{rSubsection}{Queen's Association for Technology in Medicine and Biology}{2015 - 2016}{Vice President of Publicity }{Kingston,ON}
-		 Collaborated with a small executive team to organize a lecture series where faculty and students present their work that pertains to the application of technology in medicine and biology
-	\end{rSubsection}	
-
-	\begin{rSubsection}{Greenovations}{2014 - 2015}{Committee Member}{Kingston,ON}
-		 Promoted sustainability on campus by retrofitting student homes and organizing environmental awareness campaigns 
-	\end{rSubsection}	
-\fi	
+\nobibliography{cv}
+\begin{rSection}{Conference Proceedings}
+	\begin{enumerate}[series=myexample]
+		\item \bibentry{chee_demonstration_2019}
+		\item \bibentry{chee_simulation_2019}
+		\item \bibentry{chee_validation_2018}
+		\item \bibentry{chee_numerical_2018}
+	\end{enumerate}
 \end{rSection}
 
-\begin{rSection}{Conference Presentations}
-
-	\begin{rSubsection}{ANS Winter Meeting }{Nov 2018}{Presentation}{Orlando, FL}
-		 G.J. Chee, G. Park and K.D. Huff. ``Validation of Spent Nuclear Fuel Output by \textsc{Cyclus}, a Fuel Cycle Simulator Code". 
-	   \end{rSubsection}	
-
-	\begin{rSubsection}{ANS Student Conference}{Mar 2018}{Presentation}{Gainesville, FL}
-		 G.J. Chee, J.W. Bae and K.D. Huff. ``Numerical Experiments for testing Demand-Driven Deployment Algorithms". 
-	\end{rSubsection}	
-
-\end{rSection}
 \begin{rSection}{Technical Reports}
-	\begin{rSubsection}{Advanced Reactors and Fuel Cycles Report Series}{Apr 2018}{Report UIUC-ARFC-2018-01}{Urbana, IL}
-		 G.J. Chee, J.W. Bae and K.D. Huff. ``Numerical Experiments for testing Demand-Driven Deployment Algorithms". 
-	\end{rSubsection}	
-
+	\begin{enumerate}[resume=myexample]
+		\item \bibentry{chee_transition_2019}
+	\end{enumerate}
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Selected Awards and Recognition}
-	Queens University Deans Scholar \hspace{58.5ex} 2014-2017
+Women in Nuclear Chapter Excellence Award \hspace{53.5ex} 2019
+Queens University Deans Scholar \hspace{61ex} 2014-2017
 \end{rSection}
 
-\begin{rSection}{Technical Strengths and other relevant skills}
+\begin{rSection}{Scientific Computing Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & Python, C++, MATLAB, LabVIEW, Solid Edge, HTML\\  
-Protocols \& APIs & XML \\
-Tools &  \LaTeX, Mathematica, shell, vim, bash, atom, Jupyter, MS Word, MS Excel \\
-Databases & MySQL \\
+Languages & bash, Python, C++, XML, HTML\\
+Build Systems & make, cmake\\  
+Databases & SQL \\
+Test Frameworks & nose, pytest\\
+Other Tools &  \LaTeX, Mathematica, Jupyter, MatLab, Dakota\\
 Nuclear Software & \textsc{Cyclus} , PyNE \\
-Languages & English, Mandarin 
 \end{tabular}
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
