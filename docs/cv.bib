@@ -50,7 +50,7 @@
 	address = {Urbana, IL},
 	type = {Technical {Report}},
 	title = {Transition {Scenario} {Demonstrations} of {CYCAMORE} {Demand} {Driven} {Deployment} {Capabilities}},
-	shorttitle = {Contract {DE}-{NE}0008567},
+	shorttitle = {Contract {DE}-{NE0008567}},
 	url = {https://zenodo.org/record/3354507#.XT9MApNKirw},
 	abstract = {In many fuel cycle simulators, the user must define a deployment scheme for all supporting facilities to avoid supply chain gaps. To ease setting up nuclear fuel cycle simulations, Nuclear Fuel Cycle (NFC) simulators should bring demand-responsive deployment decisions into the dynamics of the simulation logic. Thus, a next-generation NFC simulator should predictively and automatically deploy fuel cycle facilities to meet a user-defined power demand. CYCLUS is an agent-based nuclear fuel cycle simulation framework [4]. In CYCLUS, each entity (i.e. Region, Institution, or Facility) in the fuel cycle is an agent. Region agents represent geographical or political areas that institution and facility agents can be grouped into. Institution agents control the deployment and decommission of facility agents and represents legal operating organizations such as a utility, government, etc. Facility agents represent nuclear fuel cycle facilities. CYCAMORE provides agents to represent process physics of various components in the nuclear fuel cycle (e.g. mine, fuel enrichment facility, reactor). The Demand-Driven CYCAMORE Archetypes project (NEUP-FY16-10512) aims to develop CYCLUS’ demand-driven deployment capabilities. This capability is added as a CYCLUS Institution agent that deploys facilities to meet the front-end and back-end fuel cycle demands based on a user-defined commodity demand. This demand-driven deployment capability is called d3ploy. In this paper, we explain the capabilities of d3ploy and demonstrate how d3ploy minimizes undersupply of all commodities in a few simulations while meeting key simulation constraints. Constant, linearly increasing, and sinusoidal power demand transition scenarios are demonstrated. Insights are discussed to inform parameter input decisions for future work in setting up larger transition scenarios that include many facilities. And finally, the more complex transition scenarios are demonstrated.},
 	language = {english},
@@ -67,10 +67,44 @@
 	file = {Chee - 2019 - Transition Scenario Demonstrations of ARFC CYCAMOR.pdf:/Users/gwenchee/Zotero/storage/HQZIRJJ6/Chee - 2019 - Transition Scenario Demonstrations of ARFC CYCAMOR.pdf:application/pdf;Zenodo Full Text PDF:/Users/gwenchee/Zotero/storage/E5LLHLYX/Gwendolyn Chee et al. - 2019 - Transition Scenario Demonstrations of CYCAMORE Dem.pdf:application/pdf}
 }
 
-@article{bae_deep_2020,
-	title = {Deep {Learning} {Approach} to {Nuclear} {Fuel} {Transmutation} in a {Fuel} {Cycle} {Simulator}},
-	journal = {Annals of Nuclear Energy},
-	author = {Bae, Jin Whan and Rykhleskii, Andrei and Chee, Gwendolyn J. and Huff, Kathryn D.},
+@article{chee_demand_2020,
+	title = {Demand {Driven} {Deployment} {Capabilities} in {Cyclus}, a {Fuel} {Cycle} {Simulator}},
+	abstract = {The present United States’ nuclear fuel cycle faces challenges that hinder the
+expansion of nuclear energy technology. The U.S. Department of Energy identified
+four nuclear fuel cycle options, which make nuclear energy technology more
+desirable. Successfully analyzing the transitions from the current fuel cycle
+to these promising fuel cycles requires a nuclear fuel cycle simulator that can
+predictively and automatically deploy fuel cycle facilities to meet user-defined
+power demand. This work developed the d3ploy capability in Cyclus, a
+nuclear fuel cycle simulator, to automatically deploy fuel cycle facilities to meet
+user-defined power demand. User-controlled capabilities such as supply buffers,
+facility preferences, prediction algorithms, and installed capacity deployment were
+introduced to give users tools to minimize power undersupply in a transition
+scenario simulation. We demonstrate d3ploy’s capability to predict future
+commodities’ supply and demand, and automatically deploy fuel cycle facilities
+to meet the predicted demand. We use d3ploy to set up transition scenarios for
+promising nuclear fuel cycle options.},
+	journal = {Nuclear Technology},
+	author = {Chee, Gwendolyn J. and Agosta, Roberto E. Fairhurst and Bae, Jin Whan and Flanagan, Robert R. and Scopatz, Anthony M. and Huff, Kathryn D.},
 	year = {2020},
-	note = {github.com/jbae11/depletion\_rom}
+	file = {Chee et al. - 2020 - Demand Driven Deployment Capabilities in Cyclus, a.pdf:/Users/gwenchee/Zotero/storage/2KQ5YSYK/Chee et al. - 2020 - Demand Driven Deployment Capabilities in Cyclus, a.pdf:application/pdf}
+}
+
+@article{bae_deep_2020,
+	title = {Deep learning approach to nuclear fuel transmutation in a fuel cycle simulator},
+	volume = {139},
+	issn = {0306-4549},
+	url = {http://www.sciencedirect.com/science/article/pii/S0306454919307406},
+	doi = {10.1016/j.anucene.2019.107230},
+	abstract = {We trained a neural network model to predict Pressurized Water Reactor (PWR) Used Nuclear Fuel (UNF) composition given initial enrichment and burnup. This quick, flexible, medium-fidelity method to estimate depleted PWR fuel assembly compositions is used to model scenarios in which the PWR fuel burnup and enrichment vary over time. The Used Nuclear Fuel Storage, Transportation \& Disposal Analysis Resource and Data System (UNF-ST\&DARDS) Unified Database (UDB) provided a ground truth on which the model trained. We validated the model by comparing the U.S. UNF inventory profile predicted by the model with the UDB UNF inventory profile. The neural network yields less than 1\% error for UNF inventory decay heat and activity and less than 2\% error for major isotopic inventory. The neural network model takes 0.27 s for 100 predictions, compared to 118 s for 100 Oak Ridge Isotope GENeration (ORIGEN) calculations. We also implemented this model into Cyclus, an agent-based Nuclear Fuel Cycle (NFC) simulator, to perform rapid, medium-fidelity PWR depletion calculations. This model also allows discharge of batches with assemblies of varying burnup. Since the original private data cannot be retrieved from the model, this trained model can provide open-source depletion capabilities to NFC simulators. We show that training an artificial neural network with a dataset from a complex fuel depletion model can provide rapid, medium-fidelity depletion capabilities to large-scale fuel cycle simulations.},
+	language = {en},
+	urldate = {2020-01-07},
+	journal = {Annals of Nuclear Energy},
+	author = {Bae, Jin Whan and Rykhlevskii, Andrei and Chee, Gwendolyn and Huff, Kathryn D.},
+	month = may,
+	year = {2020},
+	note = {github.com/jbae11/depletion\_rom},
+	keywords = {Nuclear fuel cycle, Spent nuclear fuel, agent based modeling, Object orientation, Simulation, Systems analysis, Multiphysics, Hydrologic contaminant transport, nuclear engineering, repository, Depletion, Reactor physics, Finite elements, MOOSE, Parallel computing, Molten salt reactor, Molten salt breeder reactor, Online reprocessing, Python, Salt treatment, Machine learning, Artificial neural network},
+	pages = {107230},
+	file = {Bae et al. - 2020 - Deep learning approach to nuclear fuel transmutati.pdf:/Users/gwenchee/Zotero/storage/U2TN4IVJ/Bae et al. - 2020 - Deep learning approach to nuclear fuel transmutati.pdf:application/pdf;ScienceDirect Snapshot:/Users/gwenchee/Zotero/storage/NY5CPY9E/S0306454919307406.html:text/html}
 }
