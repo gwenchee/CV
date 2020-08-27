@@ -1,4 +1,4 @@
-manuscript = GwendolynChee_CV
+manuscript = cv
 references = $(wildcard *.bib)
 latexopt   = -halt-on-error -file-line-error
 

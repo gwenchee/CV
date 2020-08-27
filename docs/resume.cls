@@ -200,8 +200,6 @@
 \ExecuteOptions{overlapped,centered}
 \ProcessOptions\relax
 
-\nofiles	     % resume's don't need .aux files
-
 
 \newtoks\tabular@text		    % holds the current list being processed
 \newtoks\tabular@head		    % holds the head tabular list
@@ -771,12 +769,10 @@
 % with everything in the left of its column
 
 \@secpenalty = -500
-\topmargin 0pt
 \headheight 0pt
 \headsep 0pt
 \textheight 260mm
 \parindent 0pt
-%\topmargin 0in
 \topmargin 0.5in
 \oddsidemargin 0pt
 \evensidemargin 0pt
@@ -819,7 +815,7 @@
 \itemsep=0cm
 \parsep=0cm
 \topmargin -12mm
-\textheight 260mm
+\textheight 250mm
 %\textheight 275mm
 
 \newenvironment{list1}{
@@ -844,7 +840,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % From T. Pavlic
 
-\usepackage[shortlabels]{enumitem}
 
 % Simpler bibsections for CV sections
 % (thanks to natbib for inspiration)
@@ -867,6 +862,7 @@
 %   \restartlist{bibenum}
 %
 %   at the place where you want the numbering to reset.
+\usepackage[shortlabels]{enumitem}
 
 \makeatletter
 \newlength{\bibhang}
@@ -876,7 +872,7 @@
 \newlist{bibsection}{itemize}{3}
 \setlist[bibsection]{label=,leftmargin=\bibhang}
 \newlist{bibenum}{enumerate}{3}
-\setlist[bibenum]{resume,label=[\arabic*],leftmargin={\bibhang\widthof{\ \ \ }}}
+\setlist[bibenum]{resume,label=[\arabic*],leftmargin={\bibhang}}
 \setlist*[bibsection,bibenum]{%
         itemindent=-\bibhang,
         itemsep=\bibsep,parsep=\z@,partopsep=0pt,
